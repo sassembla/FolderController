@@ -6,7 +6,11 @@ using UnityEngine;
 using UnityEditor;
  
 using Object = UnityEngine.Object;
- 
+
+/*
+    自分にとって需要があると思ってる物事は、フォルダ内のクラスを単体でビルドしたり起動したりとかその辺。
+    いままで好ましいインターフェースがなかったのだけれど、これなら作れる気がする。
+*/
 public class MyAssetFolderInspector : ObjectInspector {
     // この部分を動的に変更するような仕掛けがあればいい。例えばフォルダ名から撮って来て保存してもいいわけで。
     override public bool IsValid() { return HasGUID("7cef9d3dff1914f83a031457c69f67eb"); }
